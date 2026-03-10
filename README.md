@@ -52,6 +52,6 @@ Beberapa fitur yang terdapat pada aplikasi ini antara lain:
 
               Shared state: List<Registrant>
 
-
+```
 ---
 
