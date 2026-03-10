@@ -207,7 +207,7 @@ Setelah semua data diisi dengan benar, pengguna dapat menekan tombol **Daftar Se
 
 <img width="1919" height="912" alt="Screenshot 2026-03-10 182859" src="https://github.com/user-attachments/assets/6ef5eb40-0d8b-4993-9e82-11b2d81ad3f2" />
 
-<img width="1919" height="908" alt="Screenshot 2026-03-10 184347" src="https://github.com/user-attachments/assets/c95a47ef-0e94-4b23-bdaf-ad9f9a8558a9" />
+<img width="1919" height="909" alt="image" src="https://github.com/user-attachments/assets/5e5d36cf-d091-41ae-8d69-c859007c30d3" />
 
 
 ---
