@@ -53,5 +53,78 @@ Beberapa fitur yang terdapat pada aplikasi ini antara lain:
               Shared state: List<Registrant>
 
 ```
+
+Diagram di atas menunjukkan struktur halaman pada aplikasi yang saya buat.
+Aplikasi terdiri dari tiga halaman utama yaitu Registration Form Page, Registrant List Page, dan Registrant Detail Page yang semuanya terhubung melalui Provider sebagai pengelola data.
+
 ---
+
+## 📁 Struktur Folder Project
+
+Struktur folder utama yang saya gunakan pada project ini sebagai berikut:
+
+```
+lib/
+│
+├── models/
+│   └── registrant_model.dart
+│
+├── providers/
+│   └── registration_provider.dart
+│
+├── pages/
+│   ├── registration_page.dart
+│   ├── registrant_list_page.dart
+│   └── registrant_detail_page.dart
+│
+└── main.dart
+```
+
+### Penjelasan Folder
+
+**models**  
+<img width="208" height="62" alt="image" src="https://github.com/user-attachments/assets/c1249902-74c4-4bd6-87ca-74b240a47f24" />
+
+Folder `models` saya gunakan untuk menyimpan struktur data yang dipakai di dalam aplikasi. Di dalam folder ini terdapat file `registrant_model.dart` yang berisi model atau bentuk data dari peserta yang melakukan registrasi.
+
+Model ini menyimpan beberapa informasi penting seperti nama, email, jenis kelamin, program studi, tanggal lahir, serta waktu saat peserta melakukan pendaftaran. Dengan adanya model ini, data peserta bisa disimpan dan diolah dengan lebih rapi di dalam aplikasi.
+
+
+**providers**  
+<img width="244" height="56" alt="image" src="https://github.com/user-attachments/assets/5f02aead-cd16-460d-8807-2ae0af029b37" />
+
+Folder `providers` saya gunakan untuk mengatur dan mengelola data peserta menggunakan **Provider sebagai state management**.
+
+Di dalam folder ini terdapat file `registration_provider.dart` yang berfungsi untuk menyimpan daftar peserta yang sudah melakukan registrasi. Selain itu, provider ini juga digunakan untuk menambahkan data peserta baru, mengambil data peserta berdasarkan id, serta menghapus data peserta dari daftar.
+
+Dengan menggunakan Provider, data peserta bisa diakses oleh beberapa halaman sekaligus tanpa harus mengirim data secara manual antar halaman.
+
+**pages**  
+<img width="231" height="111" alt="image" src="https://github.com/user-attachments/assets/b07737ab-8da9-4f4c-9443-50b7b8b7db94" />
+
+Folder `pages` berisi semua halaman yang ada di dalam aplikasi. Setiap halaman dipisahkan ke dalam file yang berbeda supaya struktur project lebih rapi dan mudah dipahami.
+
+Beberapa halaman yang terdapat di folder ini antara lain:
+
+- `registration_page.dart` → halaman form registrasi tempat pengguna mengisi data pendaftaran.
+- `registrant_list_page.dart` → halaman yang menampilkan daftar peserta yang sudah mendaftar.
+- `registrant_detail_page.dart` → halaman yang menampilkan informasi lengkap dari peserta yang dipilih.
+
+
+**main.dart**  
+<img width="146" height="36" alt="image" src="https://github.com/user-attachments/assets/4eba06d8-3a6d-462e-bf39-af53f102b6a2" />
+
+File `main.dart` merupakan file utama yang digunakan untuk menjalankan aplikasi Flutter. File ini menjadi titik awal saat aplikasi dijalankan.
+
+Di dalam file ini saya melakukan beberapa hal penting seperti mengatur tema aplikasi, menentukan halaman awal yang akan ditampilkan, serta menghubungkan aplikasi dengan **Provider** agar data peserta dapat digunakan oleh semua halaman yang ada di dalam aplikasi.
+
+---
+
+
+
+
+
+
+
+
 
